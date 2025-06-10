@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #2f4f4f;
+    color: #f0f8ff;
+}
+
+body {
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #000;
+    color: #f0f8ff;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+.no:focus {
+    background-color: #4f5c81;
+}
+
+.button:focus {
+    background-color: #301d29;
+}
+
+.mode-buttons, .play-buttons {
+    margin: 20px 0;
+}
+
+#response, #score {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+.reset-btn {
+    background-color: crimson;
+    color: white;
+}

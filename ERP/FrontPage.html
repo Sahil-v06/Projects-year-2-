@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img id="logoImg" src="logo.png" alt="logo">
+        </div>
+        <div id="nav">
+            <nav id="erp">| ERP - NITJ |</nav>
+            <nav id="home">Home</nav>
+            <nav class="box">
+                <select>
+                    <option>Academic Menu</option>
+                    <option>Personal Details</option>
+                    <option>Semester Fee Payment</option>
+                    <option>Semester Registration</option>
+                    <option>Subject-Teacher Feedback</option>
+                </select>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <div id="main2">
+            <div id="divtable">
+                <!-- <p id="menu">Academic menu</p> -->
+                <table id="acadMenu">
+                    <tr>
+                        <th class="mh">Academic Menu</th>
+                    </tr>
+                    <tr>
+                        <td class="md">Personal Details</td>
+                    </tr>
+                    <tr>
+                        <td class="md">Semester Fee Payment</td>
+                    </tr>
+                    <tr>
+                        <td class="md">Semester Registration</td>
+                    </tr>
+                    <tr>
+                        <td class="md">Semester Registration</td>
+                    </tr>
+                    <tr>
+                        <td class="md">Semester Registration</td>
+                    </tr>
+                    <tr>
+                        <td class="md">Semester Registration</td>
+                    </tr>
+                    <tr>
+                        <td class="md">Semester Registration</td>
+                    </tr>
+                    <tr>
+                        <td class="md">Semester Registration</td>
+                    </tr>
+                    <tr>
+                        <td class="md">Semester Registration</td>
+                    </tr>
+                    <tr>
+                        <td class="md">Semester Registration</td>
+                    </tr>
+                    <tr>
+                        <td class="md">Semester Registration</td>
+                    </tr>
+                    <tr>
+                        <td class="md">Semester Registration</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="activity">
+                <table class="a">
+                    <tr class="ar">
+                        <th class="ah">1</th>
+                        <td class="ad">2</td>
+                        <td class="ad">3</td>
+                        <td class="ad">4</td>
+                        <td class="ad">5</td>
+                    </tr>
+                    <tr class="ar">
+                        <th class="ah"></th>
+                        <td class="ad"></td>
+                        <td class="ad"></td>
+                        <td class="ad"></td>
+                        <td class="ad"></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="personal">
+
+                <table id="table">
+                    <tr>
+                        <th colspan="3">Details of the Candidate</th>
+                    </tr>
+                    <tr>
+                        <th colspan="3">Note: Please carefully check your details (Spelling of your Name, Your Parent's
+                            Name etc.) If any discrepancy, Kindly report through the Discrepancy field given at the
+                            bottom of the page.</th>
+                    </tr>
+                    <tr>
+                        <th class="ques">Roll No.:</th>
+                        <td class="withPhoto ans">
+                            <input type="text" class="info" id="rollNo" placeholder="enter rollNo">
+                            <p class="finalInfo" id="finalRollNo">23104072</p>
+                        </td>
+                        <td id="photo" rowspan="3">
+                            <img src="https://images.unsplash.com/photo-1547468731-cc0bd2f11351?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="img">
+                    </tr>
+                    </tr>
+                    <tr>
+                        <th class="ques">Branch:</th>
+                        <td class="withPhoto ans">
+                            <input type="text" class="info" id="branch" placeholder="enter branch">
+                            <p class="finalInfo" id="finalBranch">ELECTRONICS AND COMMUNICATION ENGINEERING</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="ques">Student Name:</th>
+                        <td class="withPhoto ans">
+                            <input type="text" class="info" id="name" placeholder="enter name">
+                            <p class="finalInfo" id="finalName">SAHIL VERMA</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="ques">Course:</th>
+                        <td class="ans" colspan="2">
+                            <input type="text" class="info" id="cource" placeholder="enter cource">
+                            <p class="finalInfo" id="finalCource">B.Tech</p>
+                        </td>
+                    </tr>
+                    <!-- <tr>
+                <th></th>
+                <td></td>
+            </tr> -->
+                </table>
+            </div>
+        </div>
+        </div>
+    </main>
+    <aside id="stuff">
+        <pre id="copyright">Copyright 2024 © NIT Jalandhar
+Developed by: Computer Centre, Dr. B.R. Ambedkar National Institute of Technology, Jalandhar</pre>
+    </aside>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #logoImg {
+            margin: 1% 12% 1% 12%;
+        }
+
+        #logo {
+            background-color: rgb(32, 49, 115);
+            min-height: 18vh;
+        }
+
+        #nav {
+            min-height: 7.5vh;
+            background-color: rgb(34, 34, 34);
+            position: relative;
+        }
+
+        #erp {
+            color: rgb(244, 214, 0);
+            position: absolute;
+            font-size: 22px;
+            top: 25%;
+            left: 12%;
+            font-weight: bold;
+
+        }
+
+        #home {
+            color: gray;
+            margin-left: 15%;
+            position: absolute;
+            font-size: 18px;
+            top: 30%;
+            left: 8%;
+
+        }
+
+        #main {
+            min-height: 120vh;
+        }
+
+        #main2 {
+            position: relative;
+        }
+
+        #homeImg {
+            width: 30px;
+        }
+
+        #stuff {
+            background-color: rgb(17, 27, 64);
+            min-height: 9vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #copyright {
+            color: whitesmoke;
+            text-align: center;
+            font-size: 15px;
+        }
+
+
+        .box {
+            position: absolute;
+            top: 50%;
+            left: 34%;
+            transform: translate(-50%, -50%);
+        }
+
+        .box select {
+            background-color: rgb(34, 34, 34);
+            ;
+            color: gray;
+            padding: 12px;
+            width: 200px;
+            min-height: 56px;
+        }
+
+        #acadMenu>table,
+        td,
+        th {
+
+            text-align: left;
+        }
+
+        table {
+            border-collapse: collapse;
+            padding-left: 5%;
+            padding-top: 2%;
+            width: 100%;
+        }
+
+        td.md {
+            border-bottom: 1px solid gray;
+            padding: 15px;
+        }
+
+        th.mh {
+            background-color: rgb(75, 113, 196);
+            border-bottom: 1px solid gray;
+            padding: 15px;
+        }
+
+        #divtable {
+            border: 1px solid rgb(75, 113, 196);
+            display: inline-flex;
+            margin-left: 12%;
+            margin-top: 2%;
+            min-width: 17%;
+            margin-bottom: 20%;
+        }
+
+        #activity {
+            min-width: 60%;
+            min-height: 7%;
+            display: inline-block;
+            position: absolute;
+            left: 31%;
+            top: 3%;
+        }
+
+        tr.ar {
+            border: 1px solid grey;
+            height: 35px;
+        }
+
+        th.ah {
+            background-color: rgb(75, 113, 196);
+        }
+
+        td.ad {
+            text-align: center;
+            padding: 5px;
+            border-right: 1px solid gray;
+        }
+
+        #personal {
+            display: inline-block;
+            width: 70%;
+            position: absolute;
+            top: 15%;
+        }
+
+        /* ------------------------------------------------------ */
+
+        #containingTable {
+            width: 98%;
+            border: 1px solid black;
+            /* padding: 10px; */
+            margin: 10px;
+        }
+
+        #table {
+            margin-left: 1%;
+            margin-right: 1%;
+            margin-bottom: 1%;
+            margin-top: 1%;
+        }
+
+        #photo>img {
+            width: 100px;
+        }
+
+        th,
+        td {
+            border: 2px solid black;
+            margin: 0px;
+            padding: 2%;
+        }
+
+        .withPhoto {
+            min-width: 60vb;
+        }
+
+        table {
+            width: 98%;
+            border-collapse: collapse;
+        }
+
+        .info {
+            display: none;
+        }
+    </style>
+    <!-- <script src="script.js"></script> -->
+    <script>
+        let erp = document.querySelector("#erp");
+        erp.addEventListener("mouseover", function () {
+            erp.style.cursor = "pointer";
+        })
+        erp.addEventListener("click", function () {
+            window.location.reload();
+        })
+        let logoImg = document.querySelector("#logoImg");
+        logoImg.addEventListener("mouseover", function () {
+            logoImg.style.cursor = "pointer";
+        })
+        logoImg.addEventListener("click", function () {
+            window.location.reload();
+        })
+    </script>
+</body>
+
+</html>

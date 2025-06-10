@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#main {
+    width: 98%;
+    margin: 20px auto 10px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 2px solid #000000;
+}
+
+#containingTable {
+    width: 98%;
+    margin: auto;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+#table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+    background-color: #ffffff;
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+#photo > img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: auto;
+    border: 1px solid #000000;
+}
+
+.withPhoto {
+    min-width: 60vb;
+}
+
+.info {
+    display: none;
+    padding: 5px;
+    margin-top: 5px;
+    width: 95%;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.finalInfo {
+    display: block;
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+#editInfo {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 30px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1rem;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#editInfo:hover {
+    background-color: #222222;
+}

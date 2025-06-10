@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img id="logoImg" src="logo.png" alt="logo">
+        </div>
+        <div id="nav">
+            <nav id="erp">| ERP - NITJ |</nav>
+        </div>
+    </header>
+    <main id="main">
+        <div id="loginBox">
+            <div id="loginName">Login</div>
+            <img src="login_logo.png" alt="login_logo">
+            <p>Username: </p>
+            <input type="text" name="username" id="username">
+            <p>Password: </p>
+            <input type="password" name="password" id="password">
+            <div id="error"><b>Error!</b> Incorrect Username/Password.</div>
+            <button id="loginButton" onclick="redirect()">Login</button>
+            <p id="forgotPass">Forgot Password?</p>
+        </div>
+    </main>
+    <aside id="stuff">
+        <pre id="copyright">Copyright 2024 © NIT Jalandhar
+Developed by: Computer Centre, Dr. B.R. Ambedkar National Institute of Technology, Jalandhar</pre>
+    </aside>
+    <!-- <script src="script.js"></script> -->
+    <script>
+        let erp = document.querySelector("#erp");
+        erp.addEventListener("mouseover", function () {
+            erp.style.cursor = "pointer";
+        })
+        erp.addEventListener("click", function () {
+            window.location.reload();
+        })
+        let logoImg = document.querySelector("#logoImg");
+        logoImg.addEventListener("mouseover", function () {
+            logoImg.style.cursor = "pointer";
+        })
+        logoImg.addEventListener("click", function () {
+            window.location.reload();
+        })
+        let username = document.querySelector("#username");
+        let password = document.querySelector("#password");
+
+
+        function redirect() {
+            if (username.value == "23104072" && password.value == "23104072") {
+                // alert("hello");
+                location.href = 'FrontPage.html';
+            }
+            else {
+                document.querySelector("#error").style.display = "block";
+            }
+        }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #logoImg {
+            margin: 1% 12% 1% 12%;
+        }
+
+        #logo {
+            background-color: rgb(32, 49, 115);
+            min-height: 18vh;
+        }
+
+        #nav {
+            min-height: 7.5vh;
+            background-color: rgb(34, 34, 34);
+            position: relative;
+        }
+
+        #erp {
+            color: rgb(244, 214, 0);
+            margin-left: 5%;
+            position: absolute;
+            font-size: 22px;
+            top: 25%;
+            left: 8%;
+            font-weight: bold;
+
+        }
+
+        #main {
+            min-height: 60vh;
+            position: relative;
+        }
+
+        #loginBox {
+            border: 1px solid rgb(75, 113, 196);
+            min-height: 50vh;
+            position: absolute;
+            left: 63vb;
+            right: 63vb;
+            top: 3vh;
+            bottom: 4vh;
+            border-radius: 1%;
+        }
+
+        #loginName {
+            min-height: 7%;
+            background-color: rgb(75, 113, 196);
+            color: whitesmoke;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 2%;
+        }
+
+        #loginBox>img {
+            margin: 1em;
+            margin-bottom: 0em;
+        }
+
+        button:hover {
+            background-color: rgb(58, 89, 154);
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        #forgotPass:hover {
+            text-decoration: underline;
+            color: rebeccapurple;
+            cursor: pointer;
+        }
+
+        p {
+            margin: 0.5em 1em;
+            margin-bottom: 0em;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 92%;
+            height: 9%;
+            padding: 12px 20px;
+            margin: 2% 4% 0% 4%;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-left: 43%;
+            margin-top: 2%;
+            padding: 0% 2% 0% 2%;
+            height: 8%;
+            border-radius: 10%;
+            background-color: rgb(75, 113, 196);
+            border: none;
+            color: whitesmoke;
+            font-weight: 200;
+            font-size: 15px;
+
+        }
+
+        #forgotPass {
+            position: absolute;
+            bottom: 4%;
+            color: rgb(181, 0, 0);
+        }
+
+        #error {
+            background-color: rgb(242, 221, 220);
+            color: rgb(171, 58, 28);
+            border: .1px solid rgb(236, 202, 206);
+            border-radius: 4%;
+            margin: 2% 2% 0% 2%;
+            display: none;
+        }
+
+        #stuff {
+            background-color: rgb(17, 27, 64);
+            min-height: 9vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #copyright {
+            color: whitesmoke;
+            text-align: center;
+            font-size: 15px;
+        }
+    </style>
+</body>
+
+</html>

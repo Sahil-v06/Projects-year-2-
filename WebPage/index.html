@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main"><p>Personal Details Verification</p></div>
+    <div id="containingTable">
+        <table id="table">
+            <tr>
+                <th colspan="3">Details of the Candidate</th>
+            </tr>
+            <tr>
+                <th colspan="3">Note: Please carefully check your details (Spelling of your Name, Your Parent's Name etc.) If any discrepancy, Kindly report through the Discrepancy field given at the bottom of the page.</th>
+            </tr>
+            <tr>
+                <th class="ques">Roll No.:</th>
+                <td class="withPhoto ans">
+                    <input type="text" class="info" id="rollNo" placeholder="enter rollNo">
+                    <p class="finalInfo" id="finalRollNo">23104072</p>
+                </td>
+                <td id="photo" rowspan="3">
+                    <img src="https://images.unsplash.com/photo-1547468731-cc0bd2f11351?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img">
+                </td>
+            </tr>
+            <tr>
+                <th class="ques">Branch:</th>
+                <td class="withPhoto ans">
+                    <input type="text" class="info" id="branch" placeholder="enter branch">
+                    <p class="finalInfo" id="finalBranch">ELECTRONICS AND COMMUNICATION ENGINEERING</p>
+                </td>
+            </tr>
+            <tr>
+                <th class="ques">Student Name:</th>
+                <td class="withPhoto ans">
+                    <input type="text" class="info" id="name" placeholder="enter name">
+                    <p class="finalInfo" id="finalName">SAHIL VERMA</p>
+                </td>
+            </tr>
+            <tr>
+                <th class="ques">Course:</th>
+                <td class="ans" colspan="2">
+                    <input type="text" class="info" id="course" placeholder="enter course">
+                    <p class="finalInfo" id="finalCourse">B.Tech</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <button id="editInfo" onclick="editInfo()">edit</button>
+    <script src="script.js"></script>
+</body>
+</html>

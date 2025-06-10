@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#logoImg {
+    margin: 1% 12% 1% 12%;
+}
+
+#logo {
+    background-color: rgb(32, 49, 115);
+    min-height: 18vh;
+}
+#nav {
+    min-height: 7.5vh;
+    background-color: rgb(34, 34, 34);
+    position: relative;
+}
+#erp {
+    color: rgb(244, 214, 0);
+    margin-left: 5%;
+    position: absolute;
+    font-size: 22px;
+    top: 25%;
+    left: 8%;
+    font-weight: bold;
+    
+}
+#main {
+    min-height: 60vh;
+    position: relative;
+}
+
+#loginBox {
+    border: 1px solid rgb(75, 113, 196);
+    min-height: 50vh;
+    position: absolute;
+    left: 63vb;
+    right: 63vb;
+    top: 3vh;
+    bottom: 4vh;
+    border-radius: 1%;
+}
+#loginName {
+    min-height: 7%;
+    background-color: rgb(75, 113, 196);
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 2%;
+}
+#loginBox > img {
+    margin: 1em;
+    margin-bottom: 0em;
+}
+button:hover{
+    background-color: rgb(58, 89, 154);
+    cursor: pointer;
+    text-decoration: none;
+}
+#forgotPass:hover {
+    text-decoration: underline;
+    color: rebeccapurple;
+    cursor: pointer;
+}
+p {
+    margin: 0.5em 1em;
+    margin-bottom: 0em;
+}
+input[type=text], input[type=password] {
+    width: 92%;
+    height: 9%;
+    padding: 12px 20px;
+    margin: 2% 4% 0% 4%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button {
+    margin-left: 43%;
+    margin-top: 2%;
+    padding: 0% 2% 0% 2%;
+    height: 8%;
+    border-radius: 10%;
+    background-color: rgb(75, 113, 196);
+    border: none;
+    color: whitesmoke;
+    font-weight: 200;
+    font-size: 15px;
+    
+}
+#forgotPass {
+    position: absolute;
+    bottom: 4%;
+    color: rgb(181, 0, 0);
+}
+#error {
+    background-color: rgb(242, 221, 220);
+    color: rgb(171, 58, 28);
+    border: .1px solid rgb(236, 202, 206);
+    border-radius: 4%;
+    margin: 2% 2% 0% 2%;
+    display: none;
+}
+
+#stuff {
+    background-color: rgb(17, 27, 64);
+    min-height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#copyright {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 15px;
+}
